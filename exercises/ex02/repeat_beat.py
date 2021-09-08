@@ -2,11 +2,11 @@
 
 __author__ = "730408456"
 
-beat = str = input("What beat do you want to repeat? ")
+beat = str(input("What beat do you want to repeat? "))
 
 beats = beat
 
-x = int = int(input("How many times do you want to repeat it? "))
+x = int(input("How many times do you want to repeat it? "))
 
 if x < 1: 
     print("No beat...")
