@@ -14,4 +14,4 @@ else:
     while x > 1:
         beats = beats + " " + beat
         x = x - 1
-print(beats)
+    print(beats)
