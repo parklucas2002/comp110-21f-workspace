@@ -20,6 +20,6 @@ while length > 0:
         x = x + 1
     length = length - 1
 
-n = str(n)
+output = str(n)
 
-print("Count: " + n)
+print("Count: " + output)
