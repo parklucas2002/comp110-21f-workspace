@@ -8,7 +8,7 @@ HP = 100
 
 coin: str = '\U00002B50'
 
-points = 0
+points: int = 0
 
 player: str = "" ""
 
