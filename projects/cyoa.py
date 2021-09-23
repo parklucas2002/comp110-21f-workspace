@@ -14,6 +14,7 @@ player: str = "" ""
 
 
 def greet() -> None:
+    """The player will be introduced to the game, and will have the option to read the rules."""
     global player
     player = input("What is your name? ")
     print(f"Welcome to Dungeon Fighter, {player}!")
@@ -30,6 +31,7 @@ def greet() -> None:
 
             
 def choose(choice: int) -> int:
+    """How the player will choose a path."""
     print(f"You have three choices, {player}. ")
     print("1: Fight DAVE THE ORC! A strong but stupid opponent, good for beginners! ")
     print("2: Fight RICHARD THE WIZARD! A more crafty and difficult opponent, better for advanced players! ")
@@ -39,6 +41,7 @@ def choose(choice: int) -> int:
 
 
 def dave(DAVEHP: int, HP: int) -> int:
+    """A fight with Dave the Troll. He uses consistent, but weaker attacks."""
     print("DAVE THE TROLL! A fearsome opponent, but not too bright. You challenge him to a fight to the death! ")
     x = 0
     points = 0
@@ -102,6 +105,7 @@ def dave(DAVEHP: int, HP: int) -> int:
 
 
 def richard(RICHARDHP: int, HP: int, points: int) -> int:
+    """A fight with Richard the Wizard. He uses erratic, strong attacks. Player should only be able to fight him after winning against Dave, or losing against him twice."""
     print("RICHARD THE WIZARD! A crafty warlock, undefeated in the dungeon arena! Fight to the death! ")
     x = 0
     while HP > 0 and RICHARDHP > 0:
@@ -165,6 +169,7 @@ def richard(RICHARDHP: int, HP: int, points: int) -> int:
 
 
 def main() -> None:
+    """Main game loop."""
     points = 0
     greet()
     b = 0
