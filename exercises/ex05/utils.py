@@ -17,11 +17,14 @@ def only_evens(evens: list[int]) -> list[int]:
 def sub(a_list: list[int], x: int, y: int) -> list[int]:
     """Generate a subset of another list."""
     b_list: list[int] = list()
-    while x < y:
-        b_list.append(a_list[x])
-        x += 1
-    else:
+    if x < 0 or x == len(a_list) or y <= 0:
         return b_list
+    else:
+        while x < y:
+            b_list.append(a_list[x])
+            x += 1
+        else:
+            return b_list
 
 
 def concat(c_list: list[int], d_list: list[int]) -> list[int]:
