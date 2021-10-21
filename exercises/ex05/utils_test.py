@@ -6,13 +6,13 @@ __author__ = "730408456"
 
 
 def test_only_evens() -> None:
-    '''Test only_evens 1.'''
+    """Test only_evens 1."""
     evens: list[int] = [1, 2, 3]
     assert only_evens(evens) == [2]
 
 
 def test_only_evens_two() -> None:
-    '''Test only_evens 2.'''
+    """Test only_evens 2."""
     evens: list[int] = [2, 5, 6, 10, 13, 14]
     assert only_evens(evens) == [2, 6, 10, 14]
 
@@ -34,9 +34,9 @@ def test_sub() -> None:
 def test_sub_two() -> None:
     """Test sub 2."""
     a_list: list[int] = [0, 1, 3]
-    x: int = 1
-    y: int = 3
-    assert sub(a_list, x, y) == [1, 3]
+    x: int = -1
+    y: int = 4
+    assert sub(a_list, x, y) == [0, 1, 3]
 
 
 def test_sub_three() -> None:
