@@ -89,3 +89,9 @@ def count(a: list[str]) -> dict[str, int]:
         else:
             b[i] = 1
     return b
+
+
+def ratio(a: int, b: int) -> float:
+    c = a + b
+    ratio = a / c * 100
+    return ratio
